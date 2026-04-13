@@ -1,6 +1,8 @@
 # Realdev - Professional Full-Stack E-Commerce Platform
 
-🚀 A scalable full-stack e-commerce platform with React 19 frontend, Express.js REST API backend, real API integration, automated testing using Jest, CI/CD pipelines with GitLab CI.
+[![CI - Test & Build](https://github.com/jama33033-commits/Full-stack-e-commerce-app-/actions/workflows/ci.yml/badge.svg)](https://github.com/jama33033-commits/Full-stack-e-commerce-app-/actions/workflows/ci.yml)
+
+🚀 A scalable full-stack e-commerce platform with React 19 frontend, Express.js REST API backend, real API integration, automated testing using Jest, and CI/CD pipelines with GitHub Actions.
 
 ## 🎯 Project Overview
 
@@ -19,8 +21,7 @@ Perfect for demonstrating full-stack development expertise to employers.
 
 ## 🛠️ Technology Stack
 
-
-- **Runtime**: Node.js (v22+)
+- **Runtime**: Node.js (v20+ recommended)
 - **Framework**: Express.js
 - **Language**: JavaScript (Plain JS for simplicity & performance)
 - **Database**: In-memory store (easily upgradable to MongoDB/PostgreSQL)
@@ -30,7 +31,7 @@ Perfect for demonstrating full-stack development expertise to employers.
 ### API Endpoints
 - `GET /api/products` - List all products
 - `GET /api/products/:id` - Single product
-- `GET/POST /api/cart-items` - Cart operations  
+- `GET/POST /api/cart-items` - Cart operations
 - `PUT /api/cart-items/:id` - Update quantity
 - `DELETE /api/cart-items/:id` - Remove item
 - `GET/POST /api/orders` - Order management
@@ -44,21 +45,18 @@ Perfect for demonstrating full-stack development expertise to employers.
 - **State Management**: React Query (@tanstack)
 - **Routing**: React Router v7
 - **HTTP Client**: Axios
-- **Testing**: Jest (Unit test and Integration test)
+- **Testing**: Jest (Unit and integration tests)
 - **UI Icons**: React Icons
 
 ### DevOps & Tools
-- **Version Control**: Git/GitLab
-- **CI/CD**: GitLab CI (Free, unlimited pipeline minutes)
+- **Version Control**: Git/GitHub
+- **CI/CD**: GitHub Actions
 - **Deployment**: Ready for AWS/Vercel/Netlify
-- **Code Quality**: ESLint, Prettier
+- **Code Quality**: ESLint
 - **Testing Framework**: Jest
-### Backend
-
 
 ### Prerequisites
 - Node.js v18+
-- PostgreSQL 12+ (or SQLite for development)
 - Git
 
 ## 🚀 Quick Start
@@ -66,7 +64,7 @@ Perfect for demonstrating full-stack development expertise to employers.
 ### 1. Clone & Install
 ```bash
 git clone https://github.com/jama33033-commits/Full-stack-e-commerce-app-.git
-cd Realdev
+cd Full-stack-e-commerce-app-
 
 # Install backend
 cd Backend && npm install && cd ..
@@ -97,38 +95,30 @@ npm run test
 
 ## ✅ Test Results
 
-**Automated Tests:** Every push to GitLab automatically runs tests via [GitLab CI](https://about.gitlab.com/features/continuous-integration/)
+**Automated Tests:** Every push and pull request to `main` runs the `CI - Test & Build` workflow in GitHub Actions.
 
 **Test Coverage:**
 - ✅ Unit tests with Jest
-- ✅ Integration tests  
+- ✅ Integration tests
 - ✅ Frontend build validation
 - ✅ Backend syntax checking
 
-View your CI/CD pipeline in GitLab after pushing!
+Open the [Actions workflow page](https://github.com/jama33033-commits/Full-stack-e-commerce-app-/actions/workflows/ci.yml) to view the latest runs.
 
-## 📦 Deploy to GitLab
+## 📦 Show GitHub Actions Passed
 
-### 1. Create GitLab Account
-Go to https://gitlab.com and create a free account
-
-### 2. Create New Project
-Click **"New project"** → **"Create blank project"**
-- Project name: `realdev`
-- Visibility: **Public**
-- Click **"Create project"**
-
-### 3. Push Your Code
+### 1. Push Your Code
 ```bash
-cd c:\Users\jama\Desktop\Realdev
-git remote set-url origin https://gitlab.com/YOUR_USERNAME/realdev.git
-git push -u origin main
+git add .
+git commit -m "Set up GitHub Actions CI"
+git push origin main
 ```
 
-### 4. View CI Pipeline
-Go to: `https://gitlab.com/YOUR_USERNAME/realdev/-/pipelines`
-- See all test runs
-- Check detailed logs
-- View test results
+### 2. Open the Actions Tab
+Go to `https://github.com/jama33033-commits/Full-stack-e-commerce-app-/actions`
 
+### 3. Check the Workflow
+Look for `CI - Test & Build` with a green check mark.
 
+### 4. Share the Badge or Actions Page
+The badge at the top of this README updates automatically to show the latest status.
