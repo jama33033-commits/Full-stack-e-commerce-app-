@@ -1,8 +1,6 @@
 # Realdev - Professional Full-Stack E-Commerce Platform
 
-🚀 A scalable full-stack e-commerce platform with React 19 frontend, Express.js REST API backend, real API integration, automated testing using Jest, CI/CD pipelines with GitHub Actions.
-
-[![CI Status](https://github.com/jama33033-commits/Full-stack-e-commerce-app-/actions/workflows/ci.yml/badge.svg)](https://github.com/jama33033-commits/Full-stack-e-commerce-app-/actions)
+🚀 A scalable full-stack e-commerce platform with React 19 frontend, Express.js REST API backend, real API integration, automated testing using Jest, CI/CD pipelines with GitLab CI.
 
 ## 🎯 Project Overview
 
@@ -50,9 +48,9 @@ Perfect for demonstrating full-stack development expertise to employers.
 - **UI Icons**: React Icons
 
 ### DevOps & Tools
-- **Version Control**: Git/GitHub
-- **CI/CD**: GitHub Actions
-- **Deployment**: AWS (EC2/ECS)
+- **Version Control**: Git/GitLab
+- **CI/CD**: GitLab CI (Free, unlimited pipeline minutes)
+- **Deployment**: Ready for AWS/Vercel/Netlify
 - **Code Quality**: ESLint, Prettier
 - **Testing Framework**: Jest
 ### Backend
@@ -99,7 +97,7 @@ npm run test
 
 ## ✅ Test Results
 
-**Automated Tests:** Every push to GitHub automatically runs tests via [GitHub Actions](https://github.com/jama33033-commits/Full-stack-e-commerce-app-/actions)
+**Automated Tests:** Every push to GitLab automatically runs tests via [GitLab CI](https://about.gitlab.com/features/continuous-integration/)
 
 **Test Coverage:**
 - ✅ Unit tests with Jest
@@ -107,6 +105,30 @@ npm run test
 - ✅ Frontend build validation
 - ✅ Backend syntax checking
 
-See the green ✅ badge above to verify all tests are passing!
+View your CI/CD pipeline in GitLab after pushing!
+
+## 📦 Deploy to GitLab
+
+### 1. Create GitLab Account
+Go to https://gitlab.com and create a free account
+
+### 2. Create New Project
+Click **"New project"** → **"Create blank project"**
+- Project name: `realdev`
+- Visibility: **Public**
+- Click **"Create project"**
+
+### 3. Push Your Code
+```bash
+cd c:\Users\jama\Desktop\Realdev
+git remote set-url origin https://gitlab.com/YOUR_USERNAME/realdev.git
+git push -u origin main
+```
+
+### 4. View CI Pipeline
+Go to: `https://gitlab.com/YOUR_USERNAME/realdev/-/pipelines`
+- See all test runs
+- Check detailed logs
+- View test results
 
 
