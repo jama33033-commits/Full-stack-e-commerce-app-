@@ -62,19 +62,3 @@ Perfect for demonstrating full-stack development expertise to employers.
 - Git
 
 
-┌─────────────────┐
-│  Push to GitHub │
-└────────┬────────┘
-         │
-    ┌────▼─────┐
-    │   Tests  │  ← GitHub Actions runs test suite
-    └────┬─────┘
-         │
-    ┌────▼──────────┐
-    │  Build Check  │  ← Verify frontend & backend build
-    └────┬──────────┘
-         │
-    ┌────▼──────────┐
-    │  AWS Deploy   │  ← Deploy to production
-    └───────────────┘
-```
