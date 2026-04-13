@@ -2,6 +2,8 @@
 
 🚀 A scalable full-stack e-commerce platform with React 19 frontend, Express.js REST API backend, real API integration, automated testing using Jest, CI/CD pipelines with GitHub Actions.
 
+[![CI Status](https://github.com/jama33033-commits/Full-stack-e-commerce-app-/actions/workflows/ci.yml/badge.svg)](https://github.com/jama33033-commits/Full-stack-e-commerce-app-/actions)
+
 ## 🎯 Project Overview
 
 Realdev is a complete e-commerce solution with:
@@ -60,5 +62,51 @@ Perfect for demonstrating full-stack development expertise to employers.
 - Node.js v18+
 - PostgreSQL 12+ (or SQLite for development)
 - Git
+
+## 🚀 Quick Start
+
+### 1. Clone & Install
+```bash
+git clone https://github.com/jama33033-commits/Full-stack-e-commerce-app-.git
+cd Realdev
+
+# Install backend
+cd Backend && npm install && cd ..
+
+# Install frontend
+cd frontend && npm install && cd ..
+```
+
+### 2. Run Backend (Terminal 1)
+```bash
+cd Backend
+npm run dev
+# Server runs on http://localhost:3000
+```
+
+### 3. Run Frontend (Terminal 2)
+```bash
+cd frontend
+npm run dev
+# App runs on http://localhost:5173
+```
+
+### 4. Run Tests
+```bash
+cd frontend
+npm run test
+```
+
+## ✅ Test Results
+
+**Automated Tests:** Every push to GitHub automatically runs tests via [GitHub Actions](https://github.com/jama33033-commits/Full-stack-e-commerce-app-/actions)
+
+**Test Coverage:**
+- ✅ Unit tests with Jest
+- ✅ Integration tests  
+- ✅ Frontend build validation
+- ✅ Backend syntax checking
+
+See the green ✅ badge above to verify all tests are passing!
 
 
