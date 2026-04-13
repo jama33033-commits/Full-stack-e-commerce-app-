@@ -1,6 +1,6 @@
 # Realdev - Professional Full-Stack E-Commerce Platform
 
-🚀 A scalable e-commerce frontend application built with  React 19 and Typescript , real API integration, automated testing using Jest, CI/CD pipelines with GitHub Actions, and deployment on AWS.
+🚀 A scalable e-commerce frontend application built with  React 19 and Typescript , real Rest  API integration, automated testing using Jest, CI/CD pipelines with GitHub Actions, and deployment on AWS.
 
 ## 🎯 Project Overview
 
@@ -51,19 +51,3 @@ Perfect for demonstrating full-stack development expertise to employers.
 - Git
 
 
-┌─────────────────┐
-│  Push to GitHub │
-└────────┬────────┘
-         │
-    ┌────▼─────┐
-    │   Tests  │  ← GitHub Actions runs test suite
-    └────┬─────┘
-         │
-    ┌────▼──────────┐
-    │  Build Check  │  ← Verify frontend & backend build
-    └────┬──────────┘
-         │
-    ┌────▼──────────┐
-    │  AWS Deploy   │  ← Deploy to production
-    └───────────────┘
-```
