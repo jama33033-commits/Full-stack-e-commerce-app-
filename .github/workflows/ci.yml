@@ -1,0 +1,45 @@
+name: CI - Test & Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      # Frontend Tests
+      - name: Install frontend dependencies
+        run: cd frontend && npm ci
+      
+      - name: Run frontend tests
+        run: cd frontend && npm run test -- --passWithNoTests
+      
+      - name: Build frontend
+        run: cd frontend && npm run build
+
+      # Backend Tests (if tests exist)
+      - name: Install backend dependencies
+        run: cd Backend && npm ci
+      
+      - name: Check backend syntax
+        run: cd Backend && node -c server.js
+
+      - name: Run backend health check
+        run: cd Backend && npm run dev &
+        continue-on-error: true

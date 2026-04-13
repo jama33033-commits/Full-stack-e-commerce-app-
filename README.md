@@ -1,16 +1,17 @@
 # Realdev - Professional Full-Stack E-Commerce Platform
 
-🚀 A scalable e-commerce frontend application built with  React 19 and Typescript , real API integration, automated testing using Jest, CI/CD pipelines with GitHub Actions, and deployment on AWS.
+🚀 A scalable full-stack e-commerce platform with React 19 frontend, Express.js REST API backend, real API integration, automated testing using Jest, CI/CD pipelines with GitHub Actions.
 
 ## 🎯 Project Overview
 
 Realdev is a complete e-commerce solution with:
-- **Professional Backend API** - RESTful TypeScript/Express.js backend with clean architecture
-- **Modern Frontend** - React 19 with TypeScript and TanStack
-- **Type Safety** - Full TypeScript implementation across the entire stack
-- **Automated Testing** - Comprehensive unit and integration tests
-- **CI/CD Pipeline** - GitHub Actions + AWS deployment automation
-- **Production Ready** - Error handling, logging, validation, and security best practices
+- **Professional Backend API** - RESTful Express.js backend with 11 API endpoints
+- **Modern Frontend** - React 19 with TypeScript, Vite bundler, React Query
+- **Real Products** - 20 products with images, ratings, and search functionality
+- **Shopping Features** - Cart management, checkout, order tracking, delivery options
+- **Automated Testing** - Jest unit and integration tests
+- **CI/CD Pipeline** - GitHub Actions for automated testing
+- **Production Ready** - CORS enabled, error handling, RESTful design
 
 Perfect for demonstrating full-stack development expertise to employers.
 
@@ -19,12 +20,22 @@ Perfect for demonstrating full-stack development expertise to employers.
 ## 🛠️ Technology Stack
 
 
-- **Runtime**: Node.js (v18+)
+- **Runtime**: Node.js (v22+)
 - **Framework**: Express.js
-- **Language**: TypeScript
-- **ORM**: Sequelize
-- **Database**: PostgreSQL / SQLite
-- **Architecture**: Controllers → Routes → Models (Clean Code Pattern)
+- **Language**: JavaScript (Plain JS for simplicity & performance)
+- **Database**: In-memory store (easily upgradable to MongoDB/PostgreSQL)
+- **API**: 11 RESTful endpoints
+- **Middleware**: CORS, JSON parser
+
+### API Endpoints
+- `GET /api/products` - List all products
+- `GET /api/products/:id` - Single product
+- `GET/POST /api/cart-items` - Cart operations  
+- `PUT /api/cart-items/:id` - Update quantity
+- `DELETE /api/cart-items/:id` - Remove item
+- `GET/POST /api/orders` - Order management
+- `GET /api/delivery-options` - Shipping methods
+- `GET /api/payment-summary` - Calculate totals
 
 ### Frontend
 - **Framework**: React 19
